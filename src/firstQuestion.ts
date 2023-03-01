@@ -9,7 +9,7 @@ export const firstQuestionData =  parsedLegislatorsObject.map((legislator: any) 
 
   parsedVoteResultsObject.map((vote: any) => {
     if (vote.legislator_id === legislator.id) {
-      vote.vote_type === '1' ? supportedVotesByLegislator += 1 : opposedVotesByLegislator += 1
+      vote.vote_type === 1 ? supportedVotesByLegislator += 1 : opposedVotesByLegislator += 1
     }
   })
 

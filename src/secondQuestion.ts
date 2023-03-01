@@ -14,7 +14,7 @@ export const secondQuestionData = parsedBillsObject.map((bill: any) => {
     if (vote.bill_id === bill.id) {
       parsedVoteResultsObject.map((voteResult: any) => {
         if (vote.id === voteResult.vote_id) {
-          voteResult.vote_type === '1' ? billSupportersCount += 1 : billOpposersCount += 1
+          voteResult.vote_type === 1 ? billSupportersCount += 1 : billOpposersCount += 1
         }  
       })
     } 
