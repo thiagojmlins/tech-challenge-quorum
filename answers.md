@@ -2,7 +2,9 @@
 
 ## 1. Discuss your solution’s time complexity. What tradeoffs did you make?
 
-If the time was not a constraint, I could add some test coverage for the parse methods, and do some more refactoring on the code (perhaps defining the corresponding types, since I've used Typescript to create this solution). I chose to use [Papa Parse](https://www.papaparse.com/) to proper render the CSV files, and thus making the process to extract the information from these files simpler.
+For both solutions, for keeping a simple implementation, I chose to use an approach to traverse every entry for the generated data structures, and do the proper operations. Since map() has a time complexity of O(n), we're using two nested map() calls on the first question and four on the second one. 
+ 
+If the time was not a constraint, I could add some test coverage for the parse methods, and do some more refactoring on the code (perhaps defining the corresponding types, since I've used Typescript to create this solution, and also use the array loops for gaining more performance). I chose to use [Papa Parse](https://www.papaparse.com/) to proper render the CSV files, and thus making the process to extract the information from these files simpler.
 
 ## 2. How would you change your solution to account for future columns that might be requested, such as “Bill Voted On Date” or “Co-Sponsors”?
 
